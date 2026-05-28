@@ -1,2 +1,59 @@
-# dataset-inmuebles-merida
-Dataset de propiedades inmobiliarias en Mérida, Yucatán. Recolección manual y automatizada de Inmuebles24.
+# Dataset de Propiedades Inmobiliarias — Mérida, Yucatán
+
+## Descripción
+Dataset de propiedades en venta recolectadas manualmente de Inmuebles24 
+entre mayo y junio de 2026. Cubre casas y departamentos en colonias 
+representativas de distintos segmentos del mercado de Mérida.
+
+## Colonias incluidas y justificación
+
+- **Altabrisa / Montebello:** segmento alto consolidado. Referencia de 
+  precios máximos del mercado formal.
+- **Santa Gertrudis Copó / Temozon Norte:** zona de crecimiento 
+  acelerado en el corredor norte. Relevante por la expansión urbana 
+  vinculada al Tren Maya.
+- **García Ginerés / Itzimná:** segmento medio-alto en colonia 
+  tradicional. Representa el mercado establecido de clase media 
+  profesional.
+- **Miguel Hidalgo / Chuburná:** segmento medio. Permite comparar 
+  precio por m² con zonas de mayor plusvalía.
+- **Francisco de Montejo / Cholul:** segmento medio en expansión. 
+  Zona de transición entre ciudad consolidada y periferia en 
+  crecimiento.
+- **Corredor Komchen-Tamamché (carretera a Progreso):** privadas y 
+  countrys de baja densidad. Segmento alto con características 
+  distintas a colonias urbanas: lotes amplios, desarrollos cerrados, 
+  y perfil de comprador orientado a espacio y exclusividad. Permite 
+  comparar precio por m² entre densidad alta y baja dentro del mismo 
+  segmento económico.
+
+## Metodología de recolección
+- Fuente: Inmuebles24
+- Filtros aplicados: operación = venta, fecha de publicación = 
+  últimos 30 días, sin filtros adicionales para no sesgar la muestra
+- Cada registro incluye PDF del anuncio original y URL archivada 
+  en Wayback Machine como evidencia de fuente
+
+## Diccionario de columnas
+| Columna | Descripción |
+|---|---|
+| fecha_registro | Fecha en que se copió el dato |
+| url | URL original del anuncio |
+| url_archivo | URL del anuncio archivado en Wayback Machine |
+| operacion | venta / renta / traspaso |
+| tipo_inmueble | casa / departamento / terreno |
+| colonia | Nombre exacto como aparece en el anuncio |
+| precio | Precio en pesos, solo número sin comas |
+| m2_construccion | Metros cuadrados de construcción |
+| m2_terreno | Metros cuadrados de terreno |
+| recamaras | Número de recámaras |
+| banos | Número de baños |
+| estacionamientos | Número de lugares de estacionamiento |
+| antiguedad | Antigüedad en años si aparece en el anuncio |
+| es_preventa | si / no |
+| notas | Observaciones relevantes del anuncio |
+
+## Limitaciones conocidas
+- Muestra manual limitada a 60 propiedades
+- Los precios son precios de lista, no precios de cierre
+- No incluye propiedades sin precio publicado
