@@ -64,3 +64,8 @@ representativas de distintos segmentos del mercado de Mérida.
 - Inmuebles24 bloquea el archivado en Wayback Machine. 
   La evidencia principal de cada registro es el PDF 
   guardado localmente.
+- Los anuncios de Inmuebles24 presentan inconsistencias frecuentes 
+  entre los datos de la ficha técnica y la descripción del anuncio, 
+  incluyendo discrepancias en m2, colonia y precio. El dato registrado 
+  en el CSV corresponde siempre a la ficha técnica. Las discrepancias 
+  relevantes se documentan en el campo notas.  
