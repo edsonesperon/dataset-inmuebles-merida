@@ -29,9 +29,9 @@ representativas de distintos segmentos del mercado de Mérida.
 
 ## Metodología de recolección
 - Fuente: Inmuebles24
-- Filtros aplicados: operación = venta, fecha de publicación = 
+- Filtros aplicados: operación = compra, fecha de publicación = 
   últimos 30 días, sin filtros adicionales para no sesgar la muestra
-- Cada registro incluye PDF del anuncio original y URL archivada 
+- Cada registro URL archivada 
   en Wayback Machine como evidencia de fuente
 
 ## Diccionario de columnas
