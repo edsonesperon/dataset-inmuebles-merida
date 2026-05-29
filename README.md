@@ -61,3 +61,6 @@ representativas de distintos segmentos del mercado de Mérida.
 - Muestra manual limitada a 60 propiedades
 - Los precios son precios de lista, no precios de cierre
 - No incluye propiedades sin precio publicado
+- Inmuebles24 bloquea el archivado en Wayback Machine. 
+  La evidencia principal de cada registro es el PDF 
+  guardado localmente.
