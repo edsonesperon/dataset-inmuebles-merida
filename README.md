@@ -33,6 +33,10 @@ representativas de distintos segmentos del mercado de Mérida.
   últimos 30 días, sin filtros adicionales para no sesgar la muestra
 - Cada registro URL archivada 
   en Wayback Machine como evidencia de fuente
+- Los anuncios se respaldan localmente en PDF como evidencia privada. 
+  No se publican en el repositorio para proteger datos personales 
+  de los anunciantes (teléfonos, nombres).  
+  
 
 ## Diccionario de columnas
 | Columna | Descripción |
