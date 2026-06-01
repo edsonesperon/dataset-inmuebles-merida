@@ -31,11 +31,12 @@ representativas de distintos segmentos del mercado de Mérida.
 - Fuente: Inmuebles24
 - Filtros aplicados: operación = compra, fecha de publicación = 
   últimos 30 días, sin filtros adicionales para no sesgar la muestra
-- Cada registro URL archivada 
-  en Wayback Machine como evidencia de fuente
-- Los anuncios se respaldan localmente en PDF como evidencia privada. 
-  No se publican en el repositorio para proteger datos personales 
-  de los anunciantes (teléfonos, nombres).  
+- La evidencia primaria de cada registro es el PDF guardado localmente
+  en evidencia/. No se publica en el repositorio para proteger datos 
+  personales de los anunciantes (teléfonos, nombres).
+- Se intenta archivar cada anuncio en Wayback Machine, pero 
+  Inmuebles24 lo bloquea sistemáticamente. El campo url_archivo 
+  queda en blanco en la mayoría de los registros. 
   
 
 ## Diccionario de columnas
@@ -43,7 +44,7 @@ representativas de distintos segmentos del mercado de Mérida.
 |---|---|
 | fecha_registro | Fecha en que se copió el dato |
 | url | URL original del anuncio |
-| url_archivo | URL del anuncio archivado en Wayback Machine |
+| url_archivo | URL del anuncio archivado en Wayback Machine. Queda en blanco cuando Inmuebles24 bloquea el archivado (comportamiento habitual)|
 | operacion | venta / renta / traspaso |
 | tipo_inmueble | casa / departamento / terreno |
 | colonia | Nombre exacto como aparece en el anuncio |
