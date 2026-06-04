@@ -1,5 +1,34 @@
 # Dataset de Propiedades Inmobiliarias — Mérida, Yucatán
 
+## Problema
+
+Los compradores, agentes e inversionistas inmobiliarios en Mérida 
+carecen de datos sistemáticos y actualizados para evaluar si el 
+precio de una propiedad es consistente con el mercado actual de 
+su zona. Las fuentes oficiales disponibles (INFONAVIT, SHF) 
+registran transacciones pasadas con varios meses de rezago y sin 
+granularidad por colonia. Este proyecto construye una alternativa 
+basada en listados activos.
+
+## Objetivo
+
+Construir un dataset de propiedades en venta en Mérida a partir 
+de listados activos y desarrollar, en fases posteriores, un modelo 
+de valuación estadística que estime el precio esperado de una 
+propiedad dado su tipo, ubicación y características.
+
+## Estado actual
+
+Fase 1 — Recolección manual en curso. Colonias representativas 
+de distintos segmentos del mercado de Mérida.
+
+Fases siguientes: automatización de recolección con scraper, 
+análisis exploratorio, modelo de valuación.
+
+## Descripción del dataset
+
+[aquí continúa exactamente lo que ya tienes]
+
 ## Descripción
 Dataset de propiedades en venta recolectadas manualmente de Inmuebles24 
 entre mayo y junio de 2026. Cubre casas y departamentos en colonias 
