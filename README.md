@@ -102,4 +102,7 @@ representativas de distintos segmentos del mercado de Mérida.
 - Las propiedades de Francisco de Montejo presentan frecuentemente 
   potencial de uso comercial que puede estar reflejado en el precio 
   de lista, lo que limita su comparación directa con propiedades 
-  de uso estrictamente residencial en otras colonias del dataset.    
+  de uso estrictamente residencial en otras colonias del dataset.
+- La sesión de Francisco de Montejo contiene 9 propiedades en lugar 
+  de 10. No se encontraron anuncios adicionales dentro del rango de 
+  60 días establecido como límite de extensión del filtro estándar.    
