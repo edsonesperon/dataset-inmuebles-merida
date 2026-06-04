@@ -98,4 +98,8 @@ representativas de distintos segmentos del mercado de Mérida.
   entre los datos de la ficha técnica y la descripción del anuncio, 
   incluyendo discrepancias en m2, colonia y precio. El dato registrado 
   en el CSV corresponde siempre a la ficha técnica. Las discrepancias 
-  relevantes se documentan en el campo notas.  
+  relevantes se documentan en el campo notas.
+- Las propiedades de Francisco de Montejo presentan frecuentemente 
+  potencial de uso comercial que puede estar reflejado en el precio 
+  de lista, lo que limita su comparación directa con propiedades 
+  de uso estrictamente residencial en otras colonias del dataset.    
