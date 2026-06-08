@@ -52,7 +52,9 @@ representativas de distintos segmentos del mercado de Mérida.
 - **Corredor Komchen-Tamamché (carretera a Progreso):** privadas y 
   countrys de baja densidad. Segmento alto con características 
   distintas a colonias urbanas: lotes amplios, desarrollos cerrados, 
-  y perfil de comprador orientado a espacio y exclusividad. Permite 
+  y perfil de comprador orientado a espacio y exclusividad.  La 
+  recolección se realizó en Yucatán Country Club por concentrar la 
+  mayor disponibilidad de anuncios recientes en el corredor. Permite 
   comparar precio por m² entre densidad alta y baja dentro del mismo 
   segmento económico.
 
@@ -102,4 +104,11 @@ representativas de distintos segmentos del mercado de Mérida.
 - Las propiedades de Francisco de Montejo presentan frecuentemente 
   potencial de uso comercial que puede estar reflejado en el precio 
   de lista, lo que limita su comparación directa con propiedades 
-  de uso estrictamente residencial en otras colonias del dataset.    
+  de uso estrictamente residencial en otras colonias del dataset.
+- La sesión de Francisco de Montejo contiene 9 propiedades en lugar 
+  de 10. No se encontraron anuncios adicionales dentro del rango de 
+  60 días establecido como límite de extensión del filtro estándar.
+- La mayoría de los anuncios no especifica la antigüedad del 
+  inmueble. El campo antiguedad queda en blanco en la mayor parte 
+  de los registros, incluso en propiedades claramente terminadas 
+  o con varios años de construidas.      
