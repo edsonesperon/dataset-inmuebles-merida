@@ -105,4 +105,8 @@ representativas de distintos segmentos del mercado de Mérida.
   de uso estrictamente residencial en otras colonias del dataset.
 - La sesión de Francisco de Montejo contiene 9 propiedades en lugar 
   de 10. No se encontraron anuncios adicionales dentro del rango de 
-  60 días establecido como límite de extensión del filtro estándar.    
+  60 días establecido como límite de extensión del filtro estándar.
+- La mayoría de los anuncios no especifica la antigüedad del 
+  inmueble. El campo antiguedad queda en blanco en la mayor parte 
+  de los registros, incluso en propiedades claramente terminadas 
+  o con varios años de construidas.      
