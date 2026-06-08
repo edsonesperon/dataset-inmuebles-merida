@@ -52,7 +52,9 @@ representativas de distintos segmentos del mercado de Mérida.
 - **Corredor Komchen-Tamamché (carretera a Progreso):** privadas y 
   countrys de baja densidad. Segmento alto con características 
   distintas a colonias urbanas: lotes amplios, desarrollos cerrados, 
-  y perfil de comprador orientado a espacio y exclusividad. Permite 
+  y perfil de comprador orientado a espacio y exclusividad.  La 
+  recolección se realizó en Yucatán Country Club por concentrar la 
+  mayor disponibilidad de anuncios recientes en el corredor. Permite 
   comparar precio por m² entre densidad alta y baja dentro del mismo 
   segmento económico.
 
