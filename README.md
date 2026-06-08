@@ -19,11 +19,13 @@ propiedad dado su tipo, ubicación y características.
 
 ## Estado actual
 
-Fase 1 — Recolección manual en curso. Colonias representativas 
-de distintos segmentos del mercado de Mérida.
+Fase 1 completada. 60 propiedades recolectadas en colonias 
+representativas de distintos segmentos del mercado de Mérida.
+
+Fase 2 — análisis exploratorio inicial con Python y pandas.
 
 Fases siguientes: automatización de recolección con scraper, 
-análisis exploratorio, modelo de valuación.
+modelo de valuación.
 
 ## Descripción del dataset
 
