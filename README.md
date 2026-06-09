@@ -19,22 +19,45 @@ propiedad dado su tipo, ubicación y características.
 
 ## Estado actual
 
-Fase 1 completada. 60 propiedades recolectadas en colonias 
+**Fase 1 completada:** 60 propiedades recolectadas en colonias 
 representativas de distintos segmentos del mercado de Mérida.
 
-Fase 2 — análisis exploratorio inicial con Python y pandas.
+**Fase 2 completada:** análisis exploratorio inicial con Python y pandas. 
+Notebook en `notebooks/01_eda_inicial.ipynb`. Hallazgos clave: distribuciones, 
+segmentos de precio por colonia, multicolinealidad entre variables de superficie, 
+y features candidatas para el modelo extraídas del campo `notas`.
 
-Fases siguientes: automatización de recolección con scraper, 
-modelo de valuación.
+**Fase 3 (próxima):** feature engineering y construcción del modelo de 
+valuación con scikit-learn.
+
+**Fases siguientes:** automatización de recolección con scraper (Playwright) 
+y despliegue del modelo como servicio (FastAPI).
 
 ## Descripción del dataset
 
-[aquí continúa exactamente lo que ya tienes]
+Dataset de 60 propiedades en venta en Mérida, Yucatán, recolectadas 
+manualmente de Inmuebles24 entre mayo y junio de 2026. Cubre casas y 
+departamentos en 6 colonias representativas de distintos segmentos del 
+mercado.
 
-## Descripción
-Dataset de propiedades en venta recolectadas manualmente de Inmuebles24 
-entre mayo y junio de 2026. Cubre casas y departamentos en colonias 
-representativas de distintos segmentos del mercado de Mérida.
+**Distribución por colonia:**
+- Altabrisa: 10
+- Santa Gertrudis Copó: 10
+- García Ginerés: 10
+- Chuburná de Hidalgo: 10
+- Francisco de Montejo: 9
+- Yucatán Country Club: 11
+
+**Composición:**
+- 44 casas (73%), 16 departamentos (27%)
+- 50 propiedades terminadas, 10 en preventa
+- Rango de precios: $1.79M – $41M MXN
+- Rango de superficie de construcción: 42 – 2,502 m²
+
+**Estructura:** archivo CSV con 15 columnas (ver Diccionario de columnas).
+
+**Formato:** `data/propiedades.csv`
+
 
 ## Colonias incluidas y justificación
 
@@ -113,4 +136,15 @@ representativas de distintos segmentos del mercado de Mérida.
 - La mayoría de los anuncios no especifica la antigüedad del 
   inmueble. El campo antiguedad queda en blanco en la mayor parte 
   de los registros, incluso en propiedades claramente terminadas 
-  o con varios años de construidas.      
+  o con varios años de construidas.
+- Multicolinealidad severa entre `m2_construccion` y `m2_terreno` (r=0.95) 
+  detectada en el EDA. No podrán incluirse ambas como predictores en una 
+  regresión lineal.
+- Dataset desbalanceado por tipo de inmueble: 73% casas, 27% departamentos. 
+  El modelo tendrá mayor capacidad predictiva para casas.
+- El 17% de las propiedades están en preventa, con dinámicas de precio 
+  potencialmente distintas a propiedades terminadas. Su tratamiento se 
+  definirá con prueba estadística en Fase 3.
+- Variables cualitativas (seguridad, amenidades, prestigio, calidad de 
+  servicios) no capturadas. Quedan absorbidas en la variable `colonia`, 
+  que actúa como proxy compuesto.
