@@ -85,7 +85,7 @@ mercado.
 
 ## Metodología de recolección
 - Fuente: Inmuebles24
-- Filtros aplicados: operación = compra, fecha de publicación = 
+- Filtros aplicados: operación = venta, fecha de publicación = 
   últimos 30 días, sin filtros adicionales para no sesgar la muestra
 - La evidencia primaria de cada registro es el PDF guardado localmente
   en evidencia/. No se publica en el repositorio para proteger datos 
@@ -101,8 +101,8 @@ mercado.
 | fecha_registro | Fecha en que se copió el dato |
 | url | URL original del anuncio |
 | url_archivo | URL del anuncio archivado en Wayback Machine. Queda en blanco cuando Inmuebles24 bloquea el archivado (comportamiento habitual)|
-| operacion | venta / renta / traspaso |
-| tipo_inmueble | casa / departamento / terreno |
+| operacion | venta (única operación registrada en el dataset) |
+| tipo_inmueble | casa / departamento (terrenos, oficinas y bodegas excluidos) |
 | colonia | Nombre exacto como aparece en el anuncio |
 | precio | Precio en pesos, solo número sin comas |
 | m2_construccion | Metros cuadrados de construcción |
@@ -130,7 +130,7 @@ mercado.
   potencial de uso comercial que puede estar reflejado en el precio 
   de lista, lo que limita su comparación directa con propiedades 
   de uso estrictamente residencial en otras colonias del dataset.
-- La sesión de Francisco de Montejo contiene 9 propiedades en lugar 
+- La muestra de Francisco de Montejo contiene 9 propiedades en lugar 
   de 10. No se encontraron anuncios adicionales dentro del rango de 
   60 días establecido como límite de extensión del filtro estándar.
 - La mayoría de los anuncios no especifica la antigüedad del 
