@@ -110,7 +110,7 @@ mercado.
 | recamaras | Número de recámaras |
 | banos | Número de baños |
 | estacionamientos | Número de lugares de estacionamiento |
-| antiguedad | Antigüedad en años si aparece en el anuncio |
+| antigüedad | Antigüedad en años si aparece en el anuncio |
 | es_preventa | si / no |
 | notas | Observaciones relevantes del anuncio |
 
