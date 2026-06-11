@@ -9,4 +9,5 @@ dependencies:
   - matplotlib
   - scikit-learn
   - scipy
+  - statsmodels
 prefix: /opt/anaconda3/envs/inmuebles-merida
