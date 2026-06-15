@@ -27,20 +27,23 @@ Notebook en `notebooks/01_eda_inicial.ipynb`. Hallazgos clave: distribuciones,
 segmentos de precio por colonia, multicolinealidad entre variables de superficie, 
 y features candidatas para el modelo extraídas del campo `notas`.
 
-**Fase 3 en progreso:** feature engineering y construcción del modelo de 
+**Fase 3 completada:** feature engineering y construcción del modelo de
 valuación con scikit-learn. Estructurada en tres partes:
 
-- **Parte 1 completada:** ingeniería de características. Notebook en 
-  `notebooks/02_feature_engineering.ipynb`. Extracción de variables binarias 
-  desde `notas`, transformación logarítmica del precio, protocolo de validación 
+- **Parte 1:** ingeniería de características. Notebook en
+  `notebooks/02_feature_engineering.ipynb`. Extracción de variables binarias
+  desde `notas`, transformación logarítmica del precio, protocolo de validación
   cruzada estratificada y prueba estadística de preventa (Mann-Whitney, p=0.018).
-- **Parte 2 completada:** modelo baseline de regresión lineal múltiple sobre 
-  `log(precio)`. Notebook en `notebooks/03_modelo_baseline.ipynb`. RMSE=6.90M ± 2.05M 
-  y MAE=3.19M ± 0.84M MXN en validación cruzada estratificada (k=5).
-- **Parte 3 (próxima):** modelo comparativo con Random Forest y Gradient Boosting. 
-  Notebook en `notebooks/04_modelo_comparativo.ipynb`.
+- **Parte 2:** modelo baseline de regresión lineal múltiple sobre `log(precio)`.
+  Notebook en `notebooks/03_modelo_baseline.ipynb`. RMSE=6.90M ± 2.05M y
+  MAE=3.19M ± 0.84M MXN en validación cruzada estratificada (k=5).
+- **Parte 3:** modelo comparativo con Random Forest y Gradient Boosting.
+  Notebook en `notebooks/04_modelo_comparativo.ipynb`. Gradient Boosting
+  seleccionado: RMSE=3.60M ± 2.23M y MAE=2.02M ± 1.09M MXN en validación
+  cruzada repetida (k=5, 10 repeticiones) — mejora del 48% en RMSE sobre
+  el baseline lineal.
 
-**Fases siguientes:** automatización de recolección con scraper (Playwright) 
+**Fases siguientes:** automatización de recolección con scraper (Playwright)
 y despliegue del modelo como servicio (FastAPI).
 
 ## Descripción del dataset
