@@ -5,3 +5,4 @@ scraper/session_state.json
 data/propiedades_scrapeadas.csv
 **/__pycache__/
 **/*.pyc
+scraper/*.html
