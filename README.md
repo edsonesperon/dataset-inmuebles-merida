@@ -56,7 +56,55 @@ producción, este obstáculo se resuelve con rotación de proxies residenciales
 (ScraperAPI, Bright Data u equivalentes). La arquitectura del scraper está
 lista para operar con esa infraestructura.
 
-**Fase siguiente:** despliegue del modelo como servicio (FastAPI).
+**Fase 5 completada:** despliegue del modelo como servicio REST con FastAPI.
+Endpoint `POST /predecir` recibe las características de una propiedad y devuelve
+el precio estimado en MXN. Documentación interactiva autogenerada (Swagger UI)
+disponible al levantar el servidor localmente. Ver sección Demo más abajo.
+
+
+
+## Demo — API de valuación
+
+La API recibe las características de una propiedad y devuelve el precio
+estimado de mercado en MXN. Documentación interactiva disponible en `http://localhost:8000/docs`
+al levantar el servidor localmente (ver instrucciones abajo).
+
+**Levantar el servidor:**
+```bash
+conda activate inmuebles-api
+cd api
+uvicorn main:app --reload
+```
+
+**Ejemplo de consulta:**
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1:8000/predecir' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "tipo_inmueble": "casa",
+  "colonia": "altabrisa",
+  "m2_construccion": 200,
+  "recamaras": 3,
+  "banos": 2,
+  "estacionamientos": 2,
+  "es_preventa": false,
+  "tiene_piscina": true,
+  "tiene_cuarto_servicio": false,
+  "es_una_planta": false,
+  "tiene_mantenimiento_con_monto": false
+}'
+```
+
+**Respuesta:**
+```json
+{
+  "precio_estimado_mxn": 4919287.98,
+  "precio_estimado_formateado": "$4,919,288 MXN"
+}
+```
+
+![Demo API](docs/demo_api.png)
 
 ## Descripción del dataset
 
