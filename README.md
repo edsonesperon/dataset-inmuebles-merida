@@ -43,8 +43,20 @@ valuación con scikit-learn. Estructurada en tres partes:
   cruzada repetida (k=5, 10 repeticiones) — mejora del 48% en RMSE sobre
   el baseline lineal.
 
-**Fases siguientes:** automatización de recolección con scraper (Playwright)
-y despliegue del modelo como servicio (FastAPI).
+**Fase 4 completada:** diseño e implementación del sistema de automatización
+de recolección con Playwright (Python async). La arquitectura incluye manejo
+de sesión persistente (`setup_session.py`), parches anti-detección de navegador
+automatizado, y dos estrategias de extracción: un scraper completo que visita
+cada anuncio individualmente (`scraper/scraper.py`) y un scraper card-based que
+extrae todos los datos disponibles desde la página de listado sin requests
+adicionales (`scraper/scraper_cards.py`). El principal obstáculo técnico
+encontrado fue el sistema Cloudflare Bot Management + hCAPTCHA de Inmuebles24,
+que bloquea la automatización a nivel de IP tras múltiples requests. En
+producción, este obstáculo se resuelve con rotación de proxies residenciales
+(ScraperAPI, Bright Data u equivalentes). La arquitectura del scraper está
+lista para operar con esa infraestructura.
+
+**Fase siguiente:** despliegue del modelo como servicio (FastAPI).
 
 ## Descripción del dataset
 
@@ -161,3 +173,8 @@ mercado.
 - Variables cualitativas (seguridad, amenidades, prestigio, calidad de 
   servicios) no capturadas. Quedan absorbidas en la variable `colonia`, 
   que actúa como proxy compuesto.
+- La automatización de recolección con Playwright es bloqueada por el sistema
+  Cloudflare Bot Management + hCAPTCHA de Inmuebles24 tras múltiples requests
+  desde la misma IP. En producción, esto se resuelve con rotación de proxies
+  residenciales. Para este proyecto, la recolección se realizó manualmente y
+  el scraper se documenta como arquitectura lista para escalar.
